@@ -266,7 +266,7 @@ const students2 = [
   // Make a COPY of the `students` array *using .slice*, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually. THEN log out each value of the original array. Notice that the original array didn't get any values taken out of it, because `slice` does NOT modify the original array.
   // Challenge 11 Code
 
-students = [
+students3 = [
         'Tre',
         'Sonny',
         'Crystal',
@@ -283,7 +283,7 @@ students = [
       ];
       
     
-      let copy = students.slice(3,11);
+      let copy = students3.slice(3,11);
       let index3 = 0;
 
       while(index3 < copy.length){
@@ -292,7 +292,7 @@ students = [
       }
 
       console.log("Original array: ");
-      console.log(students);
+      console.log(students3);
 
   
 
