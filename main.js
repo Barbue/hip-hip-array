@@ -62,14 +62,10 @@ const students = [
   const positiveNumbers = [5, 2, 13, 17, 4, 102, 3000];
   // Challenge 3 Code
 
-positiveNumbers.pop();
-  positiveNumbers.shift();
-  positiveNumbers.splice(1,2);
- 
-
-  let loopy = 0;
+let loopy = 0
 
   while(loopy < positiveNumbers.length){
+    if(positiveNumbers[loopy] % 2 === 0)
     console.log(positiveNumbers[loopy]);
     loopy++
   }
@@ -84,17 +80,13 @@ positiveNumbers.pop();
 
   // Challenge 4 Code
 
-  mixedSignNumbers.shift();
-  mixedSignNumbers.splice(0,1);
-  mixedSignNumbers.splice(2,1);
-  mixedSignNumbers.splice(3,1);
-  console.log(mixedSignNumbers);
+  let loopy1 = 0
 
-  let loopy1 = 0;
-  while(loopy1 < mixedSignNumbers.length){
-    console.log(mixedSignNumbers[loopy1]);
-    loopy1++
-}
+   while(loopy1 < mixedSignNumbers.length){
+   if(mixedSignNumbers[loopy1] % 2 === 0)
+   console.log(mixedSignNumbers[loopy1]);
+   loopy1++
+   }
  
 
 
@@ -201,13 +193,11 @@ const students1 = [
     'Andy'
   ];
   
-  let copydeletedvariables = students1.splice(3,9);
-  let ind = 0;
+ let ind = 3
   
-    while(ind < copydeletedvariables.length-1){
-    console.log(copydeletedvariables[ind]);
-    ind++;
-    }
+    while(ind <= 10){
+    console.log(students1[ind]);
+    ind++;}
   
   
   console.log("\n");
@@ -233,24 +223,20 @@ const students2 = [
     'Andy'
   ];
  
-  let copydeletedvariables1 = students2.splice(3,9);
-  let ind1 = 0;
+  let copydeletedvariables1 = students2.splice(3,8)
+  let ind1 = 0
 
-    while(ind1 < copydeletedvariables1.length-1){
+    while(ind1 < copydeletedvariables1.length){
     console.log(copydeletedvariables1[ind1]);
     ind1++;}
 
-    let newArray = [1,2,3,4];
-    let ind2 = 0;
+    let newArray = []
+    let ind2 = 0
 
-    students2.concat(newArray);
-    console.log(students2.concat(newArray));
-    let allArrays = students2.concat(newArray);
-    
-    // Wasn't sure if the left over values of original were wanted or the index 3-index 10 from originals were wanted, so i've included both. //
-    // copydeletedvariables1.concat(newArray)
-    // console.log(copydeletedvariables1.concat(newArray))
-    // let allArrays = copydeletedvariables1.concat(newArray)
+  
+    copydeletedvariables1.concat(newArray)
+    console.log(copydeletedvariables1.concat(newArray))
+    let allArrays = copydeletedvariables1.concat(newArray)
 
     while(ind2 < allArrays.length){
       console.log(allArrays[ind2]);
