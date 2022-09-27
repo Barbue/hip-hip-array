@@ -349,7 +349,6 @@ const dinosaurs2 = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dime
  dinosaurs3 = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
 
   dinosaurs3.reverse();
-  console.log(dinosaurs3.reverse());
   console.log("Original: ");
   console.group(dinosaurs3);
 
