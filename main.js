@@ -145,7 +145,7 @@ console.log(fibonacciNumbers[ire]);ire++
   // Make a NEW array with 5 values of your choice, using the same syntax as the array creation from the previous 6 challenges; that is, every value should be placed within the square brackets.  Now console.log out each value individually.
   // Challenge 7 Code
 
-const myNumbers = ["bobcat","wolf","bear","racoon","otter","fox"];
+const myNumbers = ["bobcat","wolf","bear","racoon","otter"];
 
   let index1 = 0;
 
