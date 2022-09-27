@@ -27,6 +27,14 @@ const students = [
   // Challenge 1 Code
 
 
+  let index = 0;
+
+  while(index < students.length){
+    console.log(students[index]);
+    index++;
+}
+
+
 
   console.log("\n");
   console.log("Challenge 2");
@@ -34,6 +42,15 @@ const students = [
   // Loop through the following array BACKWARDS, console.logging out each value. 64 should be printed first and 100 last.
   const grades = [100, 80, 110, 75, 83, 64];
   //Challenge 2 Code
+
+
+  let i= 0;
+  grades.reverse();
+  
+  while(i < grades.length){
+  console.log(grades[i]);
+  i++;
+}
 
   
 
@@ -45,6 +62,18 @@ const students = [
   const positiveNumbers = [5, 2, 13, 17, 4, 102, 3000];
   // Challenge 3 Code
 
+positiveNumbers.pop();
+  positiveNumbers.shift();
+  positiveNumbers.splice(1,2);
+ 
+
+  let loopy = 0;
+
+  while(loopy < positiveNumbers.length){
+    console.log(positiveNumbers[loopy]);
+    loopy++
+  }
+
 
 
   console.log("\n");
@@ -55,6 +84,19 @@ const students = [
 
   // Challenge 4 Code
 
+  mixedSignNumbers.shift();
+  mixedSignNumbers.splice(0,1);
+  mixedSignNumbers.splice(2,1);
+  mixedSignNumbers.splice(3,1);
+  console.log(mixedSignNumbers);
+
+  let loopy1 = 0;
+  while(loopy1 < mixedSignNumbers.length){
+    console.log(mixedSignNumbers[loopy1]);
+    loopy1++
+}
+ 
+
 
 
   
@@ -64,6 +106,16 @@ const students = [
   // Remove two values from the beginning and one value from the end of the following array, simply by deleting them in the following line. Then console.log out each value individually.
   const symmetricalCapitals = ['A', 'H', 'I', 'M', 'O', 'T', 'U', 'V', 'W', 'X', 'Y'];
   // Challenge 5 Code
+
+  symmetricalCapitals.pop();
+  symmetricalCapitals.shift();
+  symmetricalCapitals.shift();
+
+  let ir = 0;
+
+  while(ir < symmetricalCapitals.length){
+    console.log(symmetricalCapitals[ir]);ir++
+}
     
 
 
@@ -73,6 +125,16 @@ const students = [
   // Add a value (your choice!) to the start of the following array and two values (of your choice) to the end simply by adding them in the following line, and then console.log out each value individually.
   const fibonacciNumbers = [1, 1, 2, 3, 5, 8, 13];
   // Challenge 6 Code
+
+  fibonacciNumbers.unshift("dog");
+  fibonacciNumbers.push("cat","wolf");
+
+  let ire = 0;
+
+ while(ire < fibonacciNumbers.length){
+console.log(fibonacciNumbers[ire]);ire++
+}
+
   
   
 
@@ -82,6 +144,15 @@ const students = [
   // Challenge 7
   // Make a NEW array with 5 values of your choice, using the same syntax as the array creation from the previous 6 challenges; that is, every value should be placed within the square brackets.  Now console.log out each value individually.
   // Challenge 7 Code
+
+const myNumbers = ["bobcat","wolf","bear","racoon","otter","fox"];
+
+  let index1 = 0;
+
+  while(index1 < myNumbers.length){
+    console.log(myNumbers[index1]);
+    index1++
+}
 
 
 
@@ -94,6 +165,17 @@ const students = [
   const emptyArray = [];
   // Challenge 8 Code
 
+const emptyArray1 = [];
+
+emptyArray1.unshift("dog",25,"cat",35,"wolf");
+emptyArray1.push(45,"bird",55,"rabbit");
+
+let rad = 0;
+
+while(rad < emptyArray1.length){
+console.log(emptyArray1[rad]);rad++
+}
+
 
 
 
@@ -102,6 +184,30 @@ const students = [
   // Challenge 9
   // Loop through the `students` array from Challenge 1, starting at index 3 and ending at index 10 (INCLUSIVE), logging out each value individually.
   // Challenge 9 Code
+
+const students1 = [
+    'Tre',
+    'Sonny',
+    'Crystal',
+    'Ilyas',
+    'Greg',
+    'Fernando',
+    'Timothy',
+    'Patrick',
+    'Steve',
+    'Jimothy',
+    'Pat',
+    'Arnold',
+    'Andy'
+  ];
+  
+  let copydeletedvariables = students1.splice(3,9);
+  let ind = 0;
+  
+    while(ind < copydeletedvariables.length-1){
+    console.log(copydeletedvariables[ind]);
+    ind++;
+    }
   
   
   console.log("\n");
@@ -111,6 +217,46 @@ const students = [
   // Do NOT use slice, you will be using that for the next challenge!
   // Challenge 10 Code
 
+const students2 = [
+    'Tre',
+    'Sonny',
+    'Crystal',
+    'Ilyas',
+    'Greg',
+    'Fernando',
+    'Timothy',
+    'Patrick',
+    'Steve',
+    'Jimothy',
+    'Pat',
+    'Arnold',
+    'Andy'
+  ];
+ 
+  let copydeletedvariables1 = students2.splice(3,9);
+  let ind1 = 0;
+
+    while(ind1 < copydeletedvariables1.length-1){
+    console.log(copydeletedvariables1[ind1]);
+    ind1++;}
+
+    let newArray = [1,2,3,4];
+    let ind2 = 0;
+
+    students2.concat(newArray);
+    console.log(students2.concat(newArray));
+    let allArrays = students2.concat(newArray);
+    
+    // Wasn't sure if the left over values of original were wanted or the index 3-index 10 from originals were wanted, so i've included both. //
+    // copydeletedvariables1.concat(newArray)
+    // console.log(copydeletedvariables1.concat(newArray))
+    // let allArrays = copydeletedvariables1.concat(newArray)
+
+    while(ind2 < allArrays.length){
+      console.log(allArrays[ind2]);
+      ind2++
+    }
+
 
 
 
@@ -119,6 +265,35 @@ const students = [
   // Challenge 11
   // Make a COPY of the `students` array *using .slice*, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually. THEN log out each value of the original array. Notice that the original array didn't get any values taken out of it, because `slice` does NOT modify the original array.
   // Challenge 11 Code
+
+students = [
+        'Tre',
+        'Sonny',
+        'Crystal',
+        'Ilyas',
+        'Greg',
+        'Fernando',
+        'Timothy',
+        'Patrick',
+        'Steve',
+        'Jimothy',
+        'Pat',
+        'Arnold',
+        'Andy'
+      ];
+      
+    
+      let copy = students.slice(3,11);
+      let index3 = 0;
+
+      while(index3 < copy.length){
+        console.log(copy[index3]);
+        index3++;
+      }
+
+      console.log("Original array: ");
+      console.log(students);
+
   
 
 
@@ -129,6 +304,16 @@ const students = [
   // Pull the items at indices 4-6 (inclusive) from the following array using .splice (NOT .slice!), then console.log out each item from the ORIGINAL array. Note that .splice DOES change the original array.
   const dinosaurs = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
   // Challenge 12 Code
+  
+  dinosaurs.splice(4,3);
+  console.log(dinosaurs);
+
+  let loopy3 = 0;
+
+  while(loopy3 < dinosaurs.length){
+    console.log(dinosaurs[loopy3]);loopy3++
+}
+  
 
   
   
@@ -138,6 +323,18 @@ const students = [
   // Challenge 13
   // Use .join to change the dinosaur strings from the above array into one string with a '*' string as the "separator". Then console.log out that string.
   // Challenge 13 Code
+
+const dinosaurs2 = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
+
+  dinosaurs2.join(" * ");
+  console.log(dinosaurs2.join(" * "));
+  let dino3 = dinosaurs2.join(" * ");
+  let loopy4 = 0;
+
+  while(loopy4 < dino3.length){
+    console.log(dino3[loopy4]);
+    loopy4++;
+}
 
 
 
@@ -149,6 +346,18 @@ const students = [
   // Use .reverse to reverse the dinosaur array and then log out the original array. .reverse DOES change the original array.
   // Challenge 14 Code
 
+ dinosaurs3 = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
+
+  dinosaurs3.reverse();
+  console.log(dinosaurs3.reverse());
+  console.log("Original: ");
+  console.group(dinosaurs3);
+
+  let loopy5 = 0;
+  while(loopy5 < dinosaurs3.length){
+  console.log(dinosaurs3[loopy5]);loopy5++
+}
+
 
 
   
@@ -158,6 +367,22 @@ const students = [
   // Create two new arrays.
   // Use .concat to combine those two arrays into a NEW array you make (.concat RETURNS an array). Then console.log out each value of that new array individually. Now console.log both the primaries and secondaries arrays, noting that .concat does NOT mutate the original arrays.
   // Challenge 15 Code
+
+let doc1 = ["dog","cat",25,"rabbit"];
+  let doc2 = ["There","Can","Be","Only",1];
+  doc1.concat(doc2);
+  //console.log(doc1.concat(doc2));
+  let yep = 0;
+  let nope = doc1.concat(doc2);
+
+  while(yep < nope.length){
+    console.log(nope[yep]);
+    yep++
+  }
+
+  console.log("Original arrays: ");
+  console.log(doc1);
+  console.log(doc2);
 
 
   
