@@ -314,13 +314,7 @@ const dinosaurs2 = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dime
 
   dinosaurs2.join(" * ");
   console.log(dinosaurs2.join(" * "));
-  let dino3 = dinosaurs2.join(" * ");
-  let loopy4 = 0;
-
-  while(loopy4 < dino3.length){
-    console.log(dino3[loopy4]);
-    loopy4++;
-}
+  
 
 
 
